@@ -28,11 +28,21 @@ module.exports = function(grunt) {
         newcap    : false
       }
     },
+    uncss: {
+      dist: {
+        files: {
+          'neekipatel.css': ['index-dev.html']
+        }
+      }
+    },
+    processhtml: {
+      dist: {
+        files: {
+          'index.html': ['index-dev.html'],
+        }
+      }
+    },
     concat: {
-      css: {
-        src: ['css/bootstrap.min.css', 'css/font-awesome.min.css', 'css/main.css'],
-        dest: 'neekipatel.css',
-      },
       js: {
         src: ['js/jquery.backstretch.min.js', 'js/app.js', 'js/analytics.js'],
         dest: 'neekipatel.js',
@@ -42,5 +52,8 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.registerTask('default', ['jshint', 'concat']);
+  grunt.loadNpmTasks('grunt-uncss');
+  grunt.loadNpmTasks('grunt-processhtml');
+
+  grunt.registerTask('default', ['jshint', 'concat', 'uncss', 'processhtml']);
 };
