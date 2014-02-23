@@ -1,0 +1,26 @@
+{
+  "name": "neekipatel.github.io",
+  "version": "0.0.1",
+  "description": "Home Page",
+  "author": "Neeki Patel <neekipatel@gmail.com>",
+  "main": "index",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "0.4.2",
+    "grunt-contrib-jshint": "0.8.0",
+    "grunt-contrib-concat": "0.3.0"
+  },
+  "scripts": {
+    "test": "grunt --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/neekipatel/neekipatel.github.io.git"
+  },
+  "keywords": [
+    "homepage"
+  ],
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}

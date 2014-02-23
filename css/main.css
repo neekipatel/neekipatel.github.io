@@ -145,28 +145,8 @@ h1,h2,h3,h4,h5,h6 {
     color: #2BA9E0;
 }
 
-.btn-facebook:hover {
-    color: #204385;
-}
-
-.btn-dribbble:hover {
-    color: #D92C85;
-}
-
-.btn-instagram:hover {
-    color: #BAB1A8;
-}
-
 .btn-linkedin:hover {
     color: #015786;
-}
-
-.btn-pinterest:hover {
-    color: #CA2128;
-}
-
-.btn-google:hover {
-    color: #D3492C;
 }
 
 .centered {
